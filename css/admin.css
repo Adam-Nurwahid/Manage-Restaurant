@@ -1,0 +1,302 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+  background-color: #007bff; /* Warna biru modern */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 3%;
+  padding-top: 2%;
+}
+
+.menu .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin: 0 15px; /* Jarak antar menu */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white; /* Warna teks */
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+  background-color: #0056b3; /* Warna saat hover */
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul li a.active {
+  background-color: #ffc107; /* Warna untuk menu aktif */
+  color: black;
+}
+
+
+.col-4{
+  width: 18%;
+  background-color: white;
+  margin: 1%;
+  padding: 2%;
+  float: left;
+}
+
+/* INI BARU */
+.main-content {
+  background-color: #f4f6f8; /* Warna latar belakang yang lembut */
+  padding: 3% 2%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+  width: 90%; /* Sedikit lebih lebar */
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tbl-full {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.tbl-full th, .tbl-full td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.tbl-full th {
+  background-color: #1e90ff; /* Warna header tabel */
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.tbl-full td {
+  color: #555;
+  font-size: 14px;
+}
+
+.tbl-full tr:nth-child(even) {
+  background-color: #f9f9f9; /* Warna untuk baris genap */
+}
+
+.tbl-full tr:hover {
+  background-color: #f1f1f1; /* Warna saat hover */
+}
+
+.btn-primary, .btn-secondary, .btn-danger {
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  margin-right: 0;
+}
+
+.btn-secondary:hover {
+  background-color: #007bff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  margin-right: 0;
+}
+
+.btn-danger:hover {
+  background-color: red;
+}
+
+.error {
+  color: #dc3545;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.btn-secondary i,
+.btn-danger i {
+  margin-right: 0; /* Hilangkan jarak default */
+}
+
+.btn-secondary i {
+  color: #ffffff; /* Warna ikon putih untuk konsistensi */
+}
+
+.btn-danger i {
+  color: #ffffff;
+}
+
+.btn-secondary:hover i {
+  color: #007bff; /* Warna saat hover untuk Update */
+}
+
+.btn-danger:hover i {
+  color: red; /* Warna saat hover untuk Delete */
+}
+
+/* Tombol dengan Ikon */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Form Styling */
+.tbl-30 input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.tbl-30 label {
+  font-weight: bold;
+}
+
+.tbl-30 button {
+  background-color: #70ff9d;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tbl-30 button:hover {
+  background-color: #00e448;
+}
+
+/* Heading Icon */
+h1 i {
+  margin-right: 10px;
+  color: #1e90ff;
+}
+
+
+
+/* Footer Styling */
+.footer {
+  background-color: #333; /* Warna latar belakang gelap */
+  color: #fff; /* Warna teks putih */
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.footer .wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-text p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-text a {
+  color: #ffc107; /* Warna link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  margin-top: 10px;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ffc107; /* Warna ikon saat hover */
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-text {
+    text-align: left;
+  }
+
+  .footer-social {
+    text-align: right;
+  }
+}
+
+

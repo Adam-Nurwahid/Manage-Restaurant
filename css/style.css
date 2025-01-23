@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.img-curve {
+  border-radius: 15px;
+  display: flex;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-white {
+  color: white;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+a {
+  color: #12CBC4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0652DD;
+}
+
+.btn {
+  padding: 1%;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #12CBC4;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: #0652DD;
+}
+
+h2 {
+  color: #2f3542;
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.float-container {
+  position: relative;
+}
+
+.float-text {
+  position: absolute;
+  bottom: 50px;
+  left: 40%;
+}
+
+fieldset {
+  border: 1px solid white;
+  margin: 5%;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+/* CSS for navbar section */
+.logo {
+  width: 10%;
+  float: left;
+}
+
+.menu {
+  line-height: 60px;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul li {
+  display: inline;
+  padding: 1%;
+  font-weight: bold;
+}
+
+/* CSS for Food Search Section */
+.food-search {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 7% 0;
+}
+
+.food-search input[type="search"] {
+  width: 50%;
+  padding: 1%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+/* CSS for Categories */
+.categories {
+  padding: 4% 0;
+}
+
+.box-3 {
+  width: 28%;
+  float: left;
+  margin: 2%;
+}
+
+/* CSS for Food Menu */
+.food-menu {
+  background-color: #ececec;
+  padding: 4% 0;
+  display: flex;
+  flex-wrap: wrap; /* Memungkinkan elemen pindah baris saat diperlukan */
+  justify-content: space-between; /* Memberi jarak antara item */
+}
+
+.food-menu-box {
+  width: 48%; /* Menjadikan lebar elemen 48%, memberi sedikit ruang antar item */
+  margin: 1% 0;
+  padding: 2%;
+  background-color: white;
+  border-radius: 15px;
+  box-sizing: border-box; /* Agar padding tidak mengubah ukuran box */
+  display: flex; /* Menggunakan flexbox untuk mengatur konten dalam setiap box */
+  flex-direction: row; /* Elemen di dalam box disusun horizontal */
+  align-items: center; /* Menjaga gambar dan deskripsi sejajar vertikal */
+}
+
+/* Memastikan gambar memiliki ukuran yang responsif dan tidak terlalu besar */
+.food-menu-img {
+  width: 30%;
+  margin-right: 2%; /* Memberi jarak antara gambar dan deskripsi */
+}
+
+.food-menu-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Deskripsi makanan */
+.food-menu-desc {
+  width: 68%;
+}
+
+.food-price {
+  font-size: 1.2rem;
+  margin: 2% 0;
+}
+
+.food-detail {
+  font-size: 1rem;
+  color: #747d8c;
+}
+
+/* CSS for Social */
+.social ul {
+  list-style-type: none;
+}
+
+.social ul li {
+  display: inline;
+  padding: 1%;
+}
+
+/* for Order Section */
+.order {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.input-responsive {
+  width: 96%;
+  padding: 1%;
+  margin-bottom: 3%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.order-label {
+  margin-bottom: 1%;
+  font-weight: bold;
+}
+
+/* CSS for Mobile Size or Smaller Screen */
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 80%;
+    float: none;
+    margin: 1% auto;
+  }
+
+  .menu ul {
+    text-align: center;
+  }
+
+  .food-search input[type="search"] {
+    width: 90%;
+    padding: 2%;
+    margin-bottom: 3%;
+  }
+
+  .btn {
+    width: 91%;
+    padding: 2%;
+  }
+
+  .food-search {
+    padding: 10% 0;
+  }
+
+  .categories {
+    padding: 20% 0;
+  }
+
+  h2 {
+    margin-bottom: 10%;
+  }
+
+  .box-3 {
+    width: 100%;
+    margin: 4% auto;
+  }
+
+  .food-menu {
+    padding: 20% 0;
+  }
+
+  .food-menu-box {
+    width: 90%;
+    padding: 5%;
+    margin-bottom: 5%;
+  }
+
+  .social {
+    padding: 5% 0;
+  }
+
+  .order {
+    width: 100%;
+  }
+}
+
+.about {
+  width: 100%;
+}
+
+.about img {
+  height: auto;
+  width: 420px;
+  padding: 5%;
+}
+
+.about-text {
+  width: 550px;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h1 {
+  color: black;
+  font-size: 80px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about-text h5 {
+  color: black;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+span {
+  color: red;
+}
+
+.about-text p {
+  color: black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+button {
+  background: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 4s;
+}
+
+button:hover {
+  background: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
